@@ -4,7 +4,7 @@ Gemini-first conversational AI with rule-based offline fallback.
 Domain-restricted to road safety, traffic law, and driving assistance.
 """
 
-import re, os, json, time
+import re, os, json, time, requests
 from collections import defaultdict
 import datetime
 
@@ -38,35 +38,22 @@ class NLPEngine:
 
     def __init__(self, db=None):
         self.db = db
-        self.gemini_model = None
+        self.gemini_url = None
+        self.api_key = None
         self.chat_sessions = {}
         self._init_gemini()
         self.fallback_patterns = self._compile_fallback_patterns()
 
     def _init_gemini(self):
-        """Initialize the Gemini API client."""
-        api_key = os.environ.get('GEMINI_API_KEY', '')
-        if not api_key:
+        """Initialize the Gemini API client config."""
+        self.api_key = os.environ.get('GEMINI_API_KEY', '').strip()
+        if not self.api_key:
             print("WARNING: GEMINI_API_KEY not found. NLP Engine will run in OFFLINE fallback mode only.")
+            self.gemini_url = None
             return
 
-        try:
-            import google.generativeai as genai
-            genai.configure(api_key=api_key)
-            self.gemini_model = genai.GenerativeModel(
-                model_name='gemini-2.0-flash',
-                system_instruction=SYSTEM_PROMPT,
-                generation_config={
-                    "temperature": 0.2,
-                    "top_p": 0.8,
-                    "top_k": 40,
-                    "max_output_tokens": 1024,
-                }
-            )
-            print("SUCCESS: Gemini 2.0 API initialized.")
-        except Exception as e:
-            print(f"ERROR: Failed to initialize Gemini API: {e}")
-            self.gemini_model = None
+        self.gemini_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
+        print(f"SUCCESS: Gemini REST API configured (Key prefix: {self.api_key[:5]}).")
 
     def _compile_fallback_patterns(self):
         """Compile regex patterns for the offline rule-based fallback engine."""
@@ -170,17 +157,14 @@ class NLPEngine:
 
         # Session management
         if session_id not in self.chat_sessions:
-            if self.gemini_model:
-                self.chat_sessions[session_id] = self.gemini_model.start_chat(history=[])
-            else:
-                self.chat_sessions[session_id] = [] # Fallback history
+            self.chat_sessions[session_id] = []
 
         context = self._get_context(message)
         
         # Try Gemini API
-        if self.gemini_model:
+        if self.gemini_url and self.api_key:
             try:
-                chat = self.chat_sessions[session_id]
+                history = self.chat_sessions[session_id]
                 
                 # Inject context transparently
                 full_prompt = message
@@ -192,10 +176,38 @@ class NLPEngine:
                 elif country_hint:
                     full_prompt = f"{country_hint}User Question: {message}"
                 
-                response = chat.send_message(full_prompt)
+                # Maintain history manually for REST API
+                history.append({"role": "user", "parts": [{"text": full_prompt}]})
+                
+                headers = {
+                    'Content-Type': 'application/json',
+                    'X-goog-api-key': self.api_key
+                }
+                payload = {
+                    "contents": history,
+                    "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
+                    "generationConfig": {"temperature": 0.2, "top_p": 0.8, "top_k": 40, "maxOutputTokens": 1024}
+                }
+                
+                req = requests.post(self.gemini_url, headers=headers, json=payload, timeout=15)
+                
+                if req.status_code != 200:
+                    history.pop() # Remove failed user message from history
+                    print(f"Gemini API Error (HTTP {req.status_code}): {req.text}")
+                    # Throw exception to trigger offline fallback
+                    raise Exception(f"HTTP {req.status_code}")
+                    
+                resp_json = req.json()
+                ai_text = resp_json['candidates'][0]['content']['parts'][0]['text']
+                
+                # Append Model response to history
+                history.append({"role": "model", "parts": [{"text": ai_text}]})
+                
+                # Remove system injection context from user message in history to save tokens for next calls
+                history[-2]["parts"][0]["text"] = message
                 
                 return {
-                    'text': response.text.replace('**', ''), # Strip markdown bolding for UI
+                    'text': ai_text.replace('**', ''), # Strip markdown bolding for UI
                     'data': {'type': 'ai_response', 'source': 'gemini-2.0'},
                     'confidence': 'High',
                     'latency_ms': int((time.time() - start_time) * 1000)
