@@ -45,15 +45,16 @@ class NLPEngine:
         self.fallback_patterns = self._compile_fallback_patterns()
 
     def _init_gemini(self):
-        """Initialize the Gemini API client config."""
+        """Initialize the Groq API client config."""
         self.api_key = os.environ.get('GEMINI_API_KEY', '').strip()
         if not self.api_key:
             print("WARNING: GEMINI_API_KEY not found. NLP Engine will run in OFFLINE fallback mode only.")
             self.gemini_url = None
             return
 
-        self.gemini_url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-        print(f"SUCCESS: Gemini REST API configured (Key prefix: {self.api_key[:5]}).")
+        self.gemini_url = "https://api.groq.com/openai/v1/chat/completions"
+        print(f"SUCCESS: Groq REST API configured (Key prefix: {self.api_key[:5]}).")
+
 
     def _compile_fallback_patterns(self):
         """Compile regex patterns for the offline rule-based fallback engine."""
