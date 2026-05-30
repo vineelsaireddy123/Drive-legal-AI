@@ -191,7 +191,7 @@ class NLPEngine:
                     'Authorization': f'Bearer {self.api_key}'
                 }
                 payload = {
-                    "model": "llama3-8b-8192",
+                    "model": "llama-3.3-70b-versatile",
                     "messages": messages,
                     "temperature": 0.2,
                     "top_p": 0.8,
