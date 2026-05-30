@@ -1,0 +1,782 @@
+{
+  "countries": {
+    "usa": {
+      "name": "United States",
+      "currency": "USD",
+      "currency_symbol": "$",
+      "drive_side": "right",
+      "speed_unit": "mph",
+      "bac_limit": "0.08%",
+      "legal_driving_age": 16,
+      "emergency_number": "911",
+      "notes": "Traffic laws vary by state. Federal minimums apply. Fines listed are typical ranges.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "25-35 mph",
+          "highway": "55-70 mph",
+          "school_zone": "15-25 mph",
+          "residential": "25 mph"
+        },
+        "license_requirements": "Written test + road test. Graduated licensing for teens (learner's permit at 15-16, provisional at 16-17). Real ID compliant license required for federal facilities.",
+        "documents_required": [
+          "Driver's License",
+          "Vehicle Registration",
+          "Proof of Insurance",
+          "Emission Inspection (some states)"
+        ],
+        "right_of_way": "Yield to pedestrians at crosswalks. Right turn on red allowed (unless posted). Four-way stop: first to arrive goes first.",
+        "child_safety": "Car seats required for children under 4. Booster seats until age 8 or 4'9\". Children under 13 must sit in rear seat."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Speeding",
+          "fine": {
+            "first_offense": 150,
+            "repeat_offense": 500
+          },
+          "description": "Exceeding posted speed limits. Fines vary by how much over the limit.",
+          "additional_penalties": [
+            "Points on license",
+            "Insurance premium increase"
+          ],
+          "safety_advice": "Speed limits are set for safety. Fines increase with speed and in school/work zones."
+        },
+        "drunk_driving": {
+          "name": "DUI / DWI (Driving Under Influence)",
+          "fine": {
+            "first_offense": 2000,
+            "repeat_offense": 5000
+          },
+          "description": "Operating a vehicle with BAC of 0.08% or higher (0.04% for commercial, 0.02% for under-21)",
+          "additional_penalties": [
+            "License suspension 90 days - 1 year",
+            "Possible jail time",
+            "Mandatory alcohol education",
+            "Ignition interlock device"
+          ],
+          "safety_advice": "Zero tolerance for underage drinking and driving. Use ride-sharing services."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing Seat Belt",
+          "fine": {
+            "first_offense": 50,
+            "repeat_offense": 200
+          },
+          "description": "Driver or passenger not wearing a seat belt",
+          "additional_penalties": [
+            "Points on license in some states"
+          ],
+          "safety_advice": "Seat belts reduce fatal crash risk by 45%. Click it or ticket."
+        },
+        "signal_jump": {
+          "name": "Running a Red Light",
+          "fine": {
+            "first_offense": 250,
+            "repeat_offense": 500
+          },
+          "description": "Failing to stop at a red traffic signal",
+          "additional_penalties": [
+            "Points on license",
+            "Traffic school option in some states"
+          ],
+          "safety_advice": "Red light cameras are widely used. Always stop at red lights."
+        },
+        "using_phone_while_driving": {
+          "name": "Distracted Driving (Phone Use)",
+          "fine": {
+            "first_offense": 200,
+            "repeat_offense": 500
+          },
+          "description": "Using handheld mobile phone while driving",
+          "additional_penalties": [
+            "Points on license",
+            "License suspension for repeat offenders"
+          ],
+          "safety_advice": "Hands-free is the law in most states. Put your phone down while driving."
+        },
+        "no_insurance": {
+          "name": "Driving Without Insurance",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 2500
+          },
+          "description": "Operating a motor vehicle without minimum liability insurance",
+          "additional_penalties": [
+            "License suspension",
+            "Vehicle impoundment",
+            "SR-22 filing required"
+          ],
+          "safety_advice": "Auto insurance is mandatory in almost all states. Minimum liability coverage is required."
+        },
+        "no_helmet": {
+          "name": "Motorcycle Without Helmet",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 250
+          },
+          "description": "Riding motorcycle without DOT-approved helmet (law varies by state — 18 states require for all riders, 29 for minors only)",
+          "additional_penalties": [
+            "Points in some states"
+          ],
+          "safety_advice": "Helmets reduce fatality risk by 37%. Always wear one regardless of state law."
+        },
+        "no_license": {
+          "name": "Driving Without a Valid License",
+          "fine": {
+            "first_offense": 300,
+            "repeat_offense": 1000
+          },
+          "description": "Operating motor vehicle without valid driver's license",
+          "additional_penalties": [
+            "Vehicle impoundment",
+            "Possible arrest",
+            "Criminal misdemeanor"
+          ],
+          "safety_advice": "Always carry your valid license while driving."
+        },
+        "reckless_driving": {
+          "name": "Reckless Driving",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 2000
+          },
+          "description": "Driving with willful disregard for safety (weaving, street racing, excessive speed)",
+          "additional_penalties": [
+            "Up to 90 days jail",
+            "License suspension",
+            "6+ points on record"
+          ],
+          "safety_advice": "Reckless driving is a criminal offense in most states."
+        }
+      }
+    },
+    "uk": {
+      "name": "United Kingdom",
+      "currency": "GBP",
+      "currency_symbol": "£",
+      "drive_side": "left",
+      "speed_unit": "mph",
+      "bac_limit": "0.08% (0.05% in Scotland)",
+      "legal_driving_age": 17,
+      "emergency_number": "999 / 112",
+      "notes": "UK uses a penalty points system. Accumulating 12 points in 3 years leads to disqualification.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "30 mph",
+          "single_carriageway": "60 mph",
+          "dual_carriageway": "70 mph",
+          "motorway": "70 mph"
+        },
+        "license_requirements": "Theory test + practical driving test. Provisional license at 17. Points system: 12 points = disqualification.",
+        "documents_required": [
+          "Driving Licence",
+          "MOT Certificate (vehicles 3+ years)",
+          "Vehicle Tax",
+          "Insurance Certificate"
+        ],
+        "right_of_way": "Drive on the LEFT. Yield at roundabouts to traffic from the right. Zebra crossings: always stop for pedestrians.",
+        "child_safety": "Child car seats required until 12 years or 135 cm tall. Rear-facing seats for babies under 15 months."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Speeding",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 1000
+          },
+          "description": "Exceeding the speed limit on any road",
+          "additional_penalties": [
+            "3-6 penalty points",
+            "Speed awareness course option",
+            "Disqualification possible"
+          ],
+          "safety_advice": "National speed limit: 30 mph urban, 60 mph single carriageway, 70 mph motorway."
+        },
+        "drunk_driving": {
+          "name": "Drink Driving",
+          "fine": {
+            "first_offense": 2500,
+            "repeat_offense": 5000
+          },
+          "description": "Driving with alcohol level above the legal limit",
+          "additional_penalties": [
+            "12 month driving ban minimum",
+            "Up to 6 months imprisonment",
+            "Criminal record"
+          ],
+          "safety_advice": "Don't drink and drive. Even one drink can impair your reaction time."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing a Seatbelt",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 500
+          },
+          "description": "Driver or passenger not wearing a seat belt when required",
+          "additional_penalties": [],
+          "safety_advice": "You must wear a seat belt in all vehicles. Exemptions are very limited."
+        },
+        "using_phone_while_driving": {
+          "name": "Using Mobile Phone While Driving",
+          "fine": {
+            "first_offense": 200,
+            "repeat_offense": 1000
+          },
+          "description": "Using a hand-held phone while driving or riding",
+          "additional_penalties": [
+            "6 penalty points",
+            "New drivers lose their licence"
+          ],
+          "safety_advice": "Even hands-free can be distracting. Pull over safely if you need to use your phone."
+        },
+        "signal_jump": {
+          "name": "Running a Red Light",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 1000
+          },
+          "description": "Failing to comply with traffic light signals",
+          "additional_penalties": [
+            "3 penalty points",
+            "Disqualification possible"
+          ],
+          "safety_advice": "Red means stop. Amber means stop unless unsafe to do so."
+        },
+        "no_insurance": {
+          "name": "Driving Without Insurance",
+          "fine": {
+            "first_offense": 300,
+            "repeat_offense": 5000
+          },
+          "description": "Using a motor vehicle on a road without valid insurance",
+          "additional_penalties": [
+            "6-8 penalty points",
+            "Vehicle seizure",
+            "Court appearance"
+          ],
+          "safety_advice": "Third-party insurance is the legal minimum in the UK."
+        },
+        "no_helmet": {
+          "name": "Motorcycle Without Helmet",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 500
+          },
+          "description": "Riding a motorcycle without an approved safety helmet (Road Traffic Act 1988, Section 16)",
+          "additional_penalties": [
+            "No penalty points but fixed penalty notice"
+          ],
+          "safety_advice": "Helmet is mandatory for all motorcycle riders and passengers in the UK."
+        },
+        "no_license": {
+          "name": "Driving Without a Licence",
+          "fine": {
+            "first_offense": 1000,
+            "repeat_offense": 1000
+          },
+          "description": "Driving without a valid, full or provisional driving licence",
+          "additional_penalties": [
+            "3-6 penalty points",
+            "Vehicle seizure possible"
+          ],
+          "safety_advice": "You must have a valid licence for the category of vehicle you are driving."
+        }
+      }
+    },
+    "uae": {
+      "name": "United Arab Emirates",
+      "currency": "AED",
+      "currency_symbol": "AED",
+      "drive_side": "right",
+      "speed_unit": "km/h",
+      "bac_limit": "0% (Zero Tolerance)",
+      "legal_driving_age": 18,
+      "emergency_number": "999 (Police) / 998 (Ambulance)",
+      "notes": "UAE has strict traffic enforcement with Salik cameras and radar. Black points system in effect.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "40-60 km/h",
+          "highway": "100-120 km/h",
+          "school_zone": "40 km/h",
+          "residential": "40 km/h"
+        },
+        "license_requirements": "Driving school mandatory for new applicants. International driving permits accepted for tourists (up to 6 months). UAE license for residents.",
+        "documents_required": [
+          "UAE Driving License / IDP",
+          "Vehicle Registration (Mulkiya)",
+          "Insurance Certificate",
+          "Emirates ID"
+        ],
+        "right_of_way": "Drive on the RIGHT. Roundabouts: yield to traffic already on the roundabout. UAE has strict lane discipline enforcement.",
+        "child_safety": "Children under 4 must use car seats. Children under 10 must sit in rear seat."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Exceeding Speed Limit",
+          "fine": {
+            "first_offense": 600,
+            "repeat_offense": 3000
+          },
+          "description": "Exceeding the posted speed limit. Fine varies with speed over limit.",
+          "additional_penalties": [
+            "12-24 black points",
+            "Vehicle confiscation for 60 days at 60+ km/h over"
+          ],
+          "safety_advice": "Speed limits are strictly enforced by radar. 120 km/h max on highways."
+        },
+        "drunk_driving": {
+          "name": "Driving Under Influence of Alcohol",
+          "fine": {
+            "first_offense": 20000,
+            "repeat_offense": 50000
+          },
+          "description": "Zero tolerance policy - any amount of alcohol while driving is illegal",
+          "additional_penalties": [
+            "Imprisonment",
+            "Deportation for expats",
+            "Vehicle confiscation",
+            "24 black points"
+          ],
+          "safety_advice": "UAE has ZERO tolerance for alcohol while driving. Even residual traces can lead to prosecution."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing Seat Belt",
+          "fine": {
+            "first_offense": 400,
+            "repeat_offense": 400
+          },
+          "description": "Driver or passengers not wearing seat belts",
+          "additional_penalties": [
+            "4 black points"
+          ],
+          "safety_advice": "All occupants must wear seat belts at all times."
+        },
+        "signal_jump": {
+          "name": "Jumping Red Signal",
+          "fine": {
+            "first_offense": 1000,
+            "repeat_offense": 1000
+          },
+          "description": "Crossing a red traffic signal",
+          "additional_penalties": [
+            "12 black points",
+            "30 day vehicle confiscation"
+          ],
+          "safety_advice": "Red light cameras are widespread. Heavy penalties apply."
+        },
+        "using_phone_while_driving": {
+          "name": "Using Mobile Phone While Driving",
+          "fine": {
+            "first_offense": 800,
+            "repeat_offense": 800
+          },
+          "description": "Using a mobile phone while driving without hands-free",
+          "additional_penalties": [
+            "4 black points"
+          ],
+          "safety_advice": "Use Bluetooth or hands-free system only."
+        },
+        "no_helmet": {
+          "name": "Motorcycle Without Helmet",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 500
+          },
+          "description": "Riding a motorcycle without an approved safety helmet",
+          "additional_penalties": [
+            "4 black points",
+            "Vehicle impoundment possible"
+          ],
+          "safety_advice": "Helmets are mandatory for all motorcycle riders in the UAE."
+        },
+        "no_license": {
+          "name": "Driving Without a Valid License",
+          "fine": {
+            "first_offense": 5000,
+            "repeat_offense": 5000
+          },
+          "description": "Driving without a valid UAE license or international driving permit",
+          "additional_penalties": [
+            "23 black points",
+            "Vehicle impoundment 7 days",
+            "Possible imprisonment"
+          ],
+          "safety_advice": "Residents must obtain a UAE license. Tourists can use IDP for up to 6 months."
+        },
+        "reckless_driving": {
+          "name": "Reckless / Dangerous Driving",
+          "fine": {
+            "first_offense": 2000,
+            "repeat_offense": 2000
+          },
+          "description": "Endangering lives through dangerous or reckless driving behavior",
+          "additional_penalties": [
+            "23 black points",
+            "60 day vehicle confiscation",
+            "Possible imprisonment"
+          ],
+          "safety_advice": "Reckless driving in the UAE can result in deportation for expats."
+        }
+      }
+    },
+    "germany": {
+      "name": "Germany",
+      "currency": "EUR",
+      "currency_symbol": "\u20ac",
+      "drive_side": "right",
+      "speed_unit": "km/h",
+      "bac_limit": "0.05% (0% for new drivers)",
+      "legal_driving_age": 18,
+      "emergency_number": "112",
+      "notes": "Germany uses a points system (Flensburg). Autobahn has advisory speed of 130 km/h but no general speed limit.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "50 km/h",
+          "rural": "100 km/h",
+          "autobahn": "No limit (advisory 130 km/h)",
+          "residential_zone": "30 km/h"
+        },
+        "license_requirements": "Theory + practical test. First-aid course mandatory. Minimum age 18 (17 with supervised driving). Probation period of 2 years.",
+        "documents_required": [
+          "Führerschein (Driving License)",
+          "Fahrzeugschein (Vehicle Registration)",
+          "Insurance Green Card",
+          "TÜV Inspection Certificate"
+        ],
+        "right_of_way": "Priority to the right (Rechts vor Links) at unmarked intersections. Trams always have priority. Emergency vehicles must be given way via Rettungsgasse.",
+        "child_safety": "Children under 12 or under 150 cm must use approved child restraint. Rear-facing seats mandatory until 15 months."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Speeding (Geschwindigkeitsüberschreitung)",
+          "fine": {
+            "first_offense": 80,
+            "repeat_offense": 700
+          },
+          "description": "Exceeding the posted speed limit. Penalties escalate with speed over limit.",
+          "additional_penalties": [
+            "1-2 points in Flensburg",
+            "1 month driving ban at 31+ km/h over in urban areas"
+          ],
+          "safety_advice": "Inside towns: 50 km/h. Outside: 100 km/h. Autobahn advisory: 130 km/h."
+        },
+        "drunk_driving": {
+          "name": "Drink Driving (Trunkenheit am Steuer)",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 3000
+          },
+          "description": "Driving with BAC above 0.05% (0% for probationary licence holders under 21)",
+          "additional_penalties": [
+            "2 points",
+            "1-3 month driving ban",
+            "MPU (medical-psychological assessment)"
+          ],
+          "safety_advice": "Zero tolerance for new drivers. Any alcohol increases crash risk."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing Seat Belt",
+          "fine": {
+            "first_offense": 30,
+            "repeat_offense": 30
+          },
+          "description": "Driver or passenger not wearing a seat belt",
+          "additional_penalties": [],
+          "safety_advice": "Seat belts are mandatory for all vehicle occupants."
+        },
+        "signal_jump": {
+          "name": "Running a Red Light",
+          "fine": {
+            "first_offense": 90,
+            "repeat_offense": 360
+          },
+          "description": "Failing to stop at a red traffic light",
+          "additional_penalties": [
+            "1-2 points",
+            "1 month driving ban if red for more than 1 second"
+          ],
+          "safety_advice": "Running a red light after 1+ seconds carries much heavier penalties."
+        },
+        "using_phone_while_driving": {
+          "name": "Using Mobile Phone While Driving",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 200
+          },
+          "description": "Using a handheld device while driving",
+          "additional_penalties": [
+            "1 point",
+            "1 month ban for repeat offenders"
+          ],
+          "safety_advice": "Hands-free use is permitted but discouraged."
+        },
+        "no_helmet": {
+          "name": "Motorcycle Without Helmet",
+          "fine": {
+            "first_offense": 15,
+            "repeat_offense": 15
+          },
+          "description": "Riding without approved helmet (StVO §21a)",
+          "additional_penalties": [
+            "Reduced insurance compensation in accident"
+          ],
+          "safety_advice": "Helmets are mandatory. Even a small fine, but huge insurance implications."
+        },
+        "no_license": {
+          "name": "Driving Without a License (Fahren ohne Fahrerlaubnis)",
+          "fine": {
+            "first_offense": 0,
+            "repeat_offense": 0
+          },
+          "description": "Criminal offense (not just administrative) — up to 1 year imprisonment or fine determined by court",
+          "additional_penalties": [
+            "Criminal record",
+            "Up to 1 year imprisonment",
+            "Vehicle confiscation"
+          ],
+          "safety_advice": "This is a CRIMINAL offense in Germany, not just a traffic violation."
+        }
+      }
+    },
+    "australia": {
+      "name": "Australia",
+      "currency": "AUD",
+      "currency_symbol": "A$",
+      "drive_side": "left",
+      "speed_unit": "km/h",
+      "bac_limit": "0.05% (0% for learners/P-platers)",
+      "legal_driving_age": 16,
+      "emergency_number": "000 / 112",
+      "notes": "Traffic laws vary by state/territory. Demerit points system used nationally. Fines are in AUD.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "50 km/h",
+          "rural": "100-110 km/h",
+          "school_zone": "40 km/h",
+          "highway": "110 km/h"
+        },
+        "license_requirements": "Graduated licensing: Learner (L) → Provisional P1 → Provisional P2 → Full. Knowledge test + driving test + hazard perception test.",
+        "documents_required": [
+          "Driver Licence",
+          "Vehicle Registration",
+          "CTP Insurance (Greenslip)",
+          "Roadworthiness Certificate (some states)"
+        ],
+        "right_of_way": "Drive on the LEFT. Give way to vehicles on roundabouts. Hook turns for right-turning cyclists in Melbourne.",
+        "child_safety": "Rear-facing seats until 6 months. Forward-facing until 4 years. Booster seat until 7 years."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Speeding",
+          "fine": {
+            "first_offense": 300,
+            "repeat_offense": 2500
+          },
+          "description": "Exceeding the speed limit. Penalties increase with speed over limit.",
+          "additional_penalties": [
+            "1-6 demerit points",
+            "License suspension at 45+ km/h over",
+            "Vehicle impoundment"
+          ],
+          "safety_advice": "School zones (40 km/h) are heavily enforced. Double demerits on public holidays."
+        },
+        "drunk_driving": {
+          "name": "Drink Driving",
+          "fine": {
+            "first_offense": 1500,
+            "repeat_offense": 5000
+          },
+          "description": "Driving with BAC above 0.05% (zero for L and P platers)",
+          "additional_penalties": [
+            "License disqualification 3-12 months",
+            "Possible imprisonment",
+            "Interlock program"
+          ],
+          "safety_advice": "Random breath testing (RBT) is very common. Don't risk it."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing Seat Belt",
+          "fine": {
+            "first_offense": 350,
+            "repeat_offense": 700
+          },
+          "description": "Driver or passenger not wearing seat belt",
+          "additional_penalties": [
+            "3 demerit points"
+          ],
+          "safety_advice": "All occupants must wear seat belts. Child restraints required for children."
+        },
+        "using_phone_while_driving": {
+          "name": "Using Mobile Phone While Driving",
+          "fine": {
+            "first_offense": 350,
+            "repeat_offense": 700
+          },
+          "description": "Using a hand-held mobile phone while driving",
+          "additional_penalties": [
+            "5 demerit points",
+            "Phone detection cameras in use"
+          ],
+          "safety_advice": "Phone detection cameras are active. Fines are doubled in school zones."
+        },
+        "signal_jump": {
+          "name": "Running a Red Light",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 1000
+          },
+          "description": "Failing to stop at a red traffic signal",
+          "additional_penalties": [
+            "3 demerit points"
+          ],
+          "safety_advice": "Red light cameras operate at intersections across all states."
+        },
+        "no_helmet": {
+          "name": "Not Wearing Bicycle/Motorcycle Helmet",
+          "fine": {
+            "first_offense": 350,
+            "repeat_offense": 700
+          },
+          "description": "Riding bicycle or motorcycle without approved helmet (mandatory for ALL riders in Australia)",
+          "additional_penalties": [
+            "3 demerit points for motorcycle"
+          ],
+          "safety_advice": "Australia is one of few countries requiring helmets for cyclists too."
+        },
+        "no_license": {
+          "name": "Driving Unlicensed",
+          "fine": {
+            "first_offense": 700,
+            "repeat_offense": 3500
+          },
+          "description": "Driving without holding a valid licence for the class of vehicle",
+          "additional_penalties": [
+            "Court appearance possible",
+            "Vehicle impoundment"
+          ],
+          "safety_advice": "Always carry your licence. Licence must match the vehicle class."
+        }
+      }
+    },
+    "canada": {
+      "name": "Canada",
+      "currency": "CAD",
+      "currency_symbol": "C$",
+      "drive_side": "right",
+      "speed_unit": "km/h",
+      "bac_limit": "0.08% (0.05% in some provinces)",
+      "legal_driving_age": 16,
+      "emergency_number": "911",
+      "notes": "Provincial laws vary. Demerit points system. Criminal Code applies to serious offenses like impaired driving.",
+      "general_rules": {
+        "speed_limits": {
+          "urban": "50 km/h",
+          "highway": "100-110 km/h",
+          "school_zone": "30-40 km/h",
+          "residential": "40 km/h"
+        },
+        "license_requirements": "Graduated licensing in all provinces: G1 (learner) → G2 (novice) → G (full). Knowledge test + road tests.",
+        "documents_required": [
+          "Provincial Driver's Licence",
+          "Vehicle Registration (ownership)",
+          "Insurance Pink Slip",
+          "Safety Standards Certificate"
+        ],
+        "right_of_way": "Drive on the RIGHT. Right turn on red allowed (except Montreal). Yield to school buses with flashing lights.",
+        "child_safety": "Rear-facing seats until 2 years. Forward-facing until 18 kg. Booster until 36 kg or 145 cm."
+      },
+      "violations": {
+        "speeding": {
+          "name": "Speeding",
+          "fine": {
+            "first_offense": 100,
+            "repeat_offense": 500
+          },
+          "description": "Exceeding the posted speed limit",
+          "additional_penalties": [
+            "3-6 demerit points",
+            "License suspension for stunt driving (50+ km/h over)"
+          ],
+          "safety_advice": "Urban limits: 50 km/h. Highway: 100-110 km/h. School zones: 30-40 km/h."
+        },
+        "drunk_driving": {
+          "name": "Impaired Driving",
+          "fine": {
+            "first_offense": 1000,
+            "repeat_offense": 5000
+          },
+          "description": "Operating a vehicle while impaired by alcohol or drugs (BAC 0.08%+)",
+          "additional_penalties": [
+            "Criminal record",
+            "License suspension 1 year minimum",
+            "Ignition interlock",
+            "Possible imprisonment"
+          ],
+          "safety_advice": "Impaired driving is a Criminal Code offense in Canada with very severe consequences."
+        },
+        "using_phone_while_driving": {
+          "name": "Distracted Driving",
+          "fine": {
+            "first_offense": 300,
+            "repeat_offense": 1000
+          },
+          "description": "Using a hand-held electronic device while driving",
+          "additional_penalties": [
+            "3-6 demerit points",
+            "License suspension"
+          ],
+          "safety_advice": "All provinces ban hand-held phone use. Some ban all phone use for novice drivers."
+        },
+        "no_seatbelt": {
+          "name": "Not Wearing Seat Belt",
+          "fine": {
+            "first_offense": 200,
+            "repeat_offense": 500
+          },
+          "description": "Driver or passenger failing to wear seat belt",
+          "additional_penalties": [
+            "2 demerit points"
+          ],
+          "safety_advice": "All occupants must wear seat belts. Driver is responsible for passengers under 16."
+        },
+        "signal_jump": {
+          "name": "Running a Red Light",
+          "fine": {
+            "first_offense": 300,
+            "repeat_offense": 500
+          },
+          "description": "Failing to stop at a red traffic light",
+          "additional_penalties": [
+            "3 demerit points"
+          ],
+          "safety_advice": "Red light cameras are common in major cities."
+        },
+        "no_helmet": {
+          "name": "Motorcycle Without Helmet",
+          "fine": {
+            "first_offense": 200,
+            "repeat_offense": 500
+          },
+          "description": "Riding motorcycle without approved helmet (mandatory in all provinces)",
+          "additional_penalties": [
+            "2 demerit points"
+          ],
+          "safety_advice": "Helmets are mandatory for all motorcycle riders and passengers in Canada."
+        },
+        "no_license": {
+          "name": "Driving Without Valid Licence",
+          "fine": {
+            "first_offense": 500,
+            "repeat_offense": 2000
+          },
+          "description": "Driving without a valid licence for the class of vehicle",
+          "additional_penalties": [
+            "Vehicle impoundment",
+            "Possible criminal charge"
+          ],
+          "safety_advice": "Always carry your licence and ensure it's valid for your vehicle class."
+        }
+      }
+    }
+  }
+}

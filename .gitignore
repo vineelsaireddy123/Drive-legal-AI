@@ -1,0 +1,14 @@
+﻿__pycache__/
+*.py[cod]
+.env
+venv/
+env/
+drivelegal.db
+ssl/
+.vscode/
+.idea/
+_temp_staging/
+_staging_backup/
+_source/
+android-app/
+*.ps1

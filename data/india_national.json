@@ -1,0 +1,485 @@
+{
+  "act": "Motor Vehicles (Amendment) Act, 2019",
+  "country": "India",
+  "last_updated": "2026-04-29",
+  "source": "Ministry of Road Transport and Highways, Government of India",
+  "violations": {
+    "no_helmet": {
+      "name": "Riding without Helmet",
+      "section": "194D",
+      "description": "Riding a two-wheeler without wearing a protective helmet",
+      "applicable_vehicles": ["two_wheeler"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000
+      },
+      "additional_penalties": ["3 months licence disqualification"],
+      "compoundable": true,
+      "safety_advice": "Always wear an ISI-certified helmet. It reduces the risk of head injury by 69% and death by 42%.",
+      "why_exists": "Head injuries are the leading cause of death in two-wheeler accidents. Helmets absorb impact and protect the skull and brain.",
+      "repeat_consequences": "Repeated violation leads to higher fines and potential licence suspension for up to 1 year. Your insurance claim may also be rejected in case of accident."
+    },
+    "no_seatbelt": {
+      "name": "Driving without Seat Belt",
+      "section": "194B",
+      "description": "Driving a motor vehicle without wearing a seat belt",
+      "applicable_vehicles": ["car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000
+      },
+      "additional_penalties": [],
+      "compoundable": true,
+      "safety_advice": "Seat belts reduce the risk of fatal injury by 45% for front-seat passengers. Always buckle up before starting the engine.",
+      "why_exists": "In a collision, an unbelted occupant can be thrown forward at the speed the vehicle was travelling, causing fatal injuries.",
+      "repeat_consequences": "Repeated violations result in doubled fines and may affect your driving record during licence renewal."
+    },
+    "overspeeding": {
+      "name": "Over-Speeding",
+      "section": "183",
+      "description": "Driving a vehicle beyond the prescribed speed limit",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": {
+          "two_wheeler": 1000,
+          "car": 1000,
+          "taxi": 2000,
+          "auto_rickshaw": 1000,
+          "bus": 2000,
+          "truck": 2000,
+          "default": 1000
+        },
+        "repeat_offense": {
+          "two_wheeler": 2000,
+          "car": 2000,
+          "taxi": 4000,
+          "auto_rickshaw": 2000,
+          "bus": 4000,
+          "truck": 4000,
+          "default": 2000
+        }
+      },
+      "additional_penalties": ["Licence seizure for repeat offenders"],
+      "compoundable": true,
+      "safety_advice": "Obey speed limits. For every 1% increase in speed, there is a 4% increase in fatal crash risk. Slow down, especially near schools and hospitals.",
+      "why_exists": "Speed is the single biggest factor in road crash fatalities. Higher speeds mean less time to react and greater impact force.",
+      "repeat_consequences": "Licence can be suspended for up to 3 months. For commercial vehicles, permit may be revoked. Third offense may lead to permanent disqualification."
+    },
+    "signal_jump": {
+      "name": "Jumping Red Light / Traffic Signal",
+      "section": "177",
+      "description": "Disobeying traffic signals or jumping a red light",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 5000
+      },
+      "additional_penalties": ["Possible licence suspension"],
+      "compoundable": true,
+      "safety_advice": "Always stop at red lights. Most intersection accidents happen due to signal violations. Wait for the green — your patience saves lives.",
+      "why_exists": "Traffic signals coordinate traffic flow and prevent collisions at intersections. Jumping signals is one of the top causes of urban road accidents.",
+      "repeat_consequences": "Fine increases to ₹5,000 and licence may be suspended for up to 3 months."
+    },
+    "drunk_driving": {
+      "name": "Drunken Driving",
+      "section": "185",
+      "description": "Driving under the influence of alcohol or drugs (BAC exceeding 30mg per 100ml of blood)",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 10000,
+        "repeat_offense": 15000
+      },
+      "additional_penalties": [
+        "Imprisonment up to 6 months (first offense)",
+        "Imprisonment up to 2 years (repeat offense)",
+        "Licence suspension for at least 6 months"
+      ],
+      "compoundable": false,
+      "safety_advice": "NEVER drink and drive. Even small amounts of alcohol impair judgement, reaction time, and coordination. Use a cab or designate a sober driver.",
+      "why_exists": "Alcohol impairs brain function critical for safe driving. Drunk driving accounts for roughly 30% of all road crash fatalities in India.",
+      "repeat_consequences": "Imprisonment up to 2 years, fine of ₹15,000, and licence revocation for minimum 2 years. Criminal record is created."
+    },
+    "driving_without_licence": {
+      "name": "Driving Without Valid Licence",
+      "section": "181",
+      "description": "Driving a motor vehicle without possessing a valid driving licence",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Vehicle may be impounded", "Community service in some states"],
+      "compoundable": true,
+      "safety_advice": "Always carry your valid driving licence. Apply for one at your nearest RTO. Driving without proper training puts everyone at risk.",
+      "why_exists": "A driving licence ensures the driver has passed tests for road rules knowledge and driving ability. Unlicensed drivers are statistically more likely to cause accidents.",
+      "repeat_consequences": "Fine doubles to ₹10,000. Vehicle will be impounded. May face imprisonment up to 3 months."
+    },
+    "driving_without_insurance": {
+      "name": "Driving Without Insurance",
+      "section": "196",
+      "description": "Using a motor vehicle without valid third-party insurance",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 2000,
+        "repeat_offense": 4000
+      },
+      "additional_penalties": ["Imprisonment up to 3 months (or both)"],
+      "compoundable": false,
+      "safety_advice": "Vehicle insurance is mandatory by law. It protects you and others financially in case of accidents. Renew before expiry.",
+      "why_exists": "Insurance provides financial protection to accident victims. Without it, victims may not receive compensation for injuries or damages.",
+      "repeat_consequences": "Fine of ₹4,000 and/or imprisonment up to 3 months. Vehicle registration may be cancelled."
+    },
+    "driving_without_registration": {
+      "name": "Driving Unregistered Vehicle",
+      "section": "192",
+      "description": "Driving a vehicle that is not registered with the RTO",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Vehicle impoundment", "Imprisonment up to 1 year"],
+      "compoundable": false,
+      "safety_advice": "Ensure your vehicle is registered and the RC book is always carried. Registration ensures vehicle meets safety standards.",
+      "why_exists": "Registration tracks vehicle ownership, ensures roadworthiness, and enables law enforcement. Unregistered vehicles may not meet safety standards.",
+      "repeat_consequences": "Imprisonment up to 1 year and/or fine up to ₹10,000. Vehicle will be permanently seized."
+    },
+    "dangerous_driving": {
+      "name": "Dangerous / Rash Driving",
+      "section": "184",
+      "description": "Driving in a manner dangerous to public safety, including rash and negligent driving",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": [
+        "Imprisonment up to 6 months (first offense)",
+        "Imprisonment up to 2 years (repeat offense)",
+        "Licence suspension"
+      ],
+      "compoundable": false,
+      "safety_advice": "Drive defensively. Avoid sudden lane changes, tailgating, and aggressive maneuvers. Your vehicle is not a weapon — treat it with respect.",
+      "why_exists": "Rash driving is one of the top killers on Indian roads. It endangers not just the driver but pedestrians, cyclists, and other road users.",
+      "repeat_consequences": "Imprisonment up to 2 years, fine of ₹10,000, and licence revocation."
+    },
+    "using_phone_while_driving": {
+      "name": "Using Mobile Phone While Driving",
+      "section": "184 (read with 177)",
+      "description": "Using a handheld mobile phone or electronic device while driving",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Licence suspension possible for repeat offenders"],
+      "compoundable": true,
+      "safety_advice": "Put your phone on Do Not Disturb mode while driving. If you must take a call, pull over safely. A 2-second glance at your phone at 60 km/h means driving blind for 33 meters.",
+      "why_exists": "Mobile phone use while driving increases crash risk by 4x. It causes visual, manual, and cognitive distraction simultaneously.",
+      "repeat_consequences": "Fine increases to ₹10,000 and licence can be suspended for 3 months."
+    },
+    "no_parking": {
+      "name": "Illegal Parking",
+      "section": "177",
+      "description": "Parking a vehicle in a no-parking zone or obstructing traffic",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 500,
+        "repeat_offense": 1500
+      },
+      "additional_penalties": ["Vehicle may be towed"],
+      "compoundable": true,
+      "safety_advice": "Always park in designated parking areas. Illegal parking blocks roads and causes traffic congestion, increasing accident risk for everyone.",
+      "why_exists": "Illegal parking obstructs traffic flow, blocks emergency vehicles, and creates blind spots that cause accidents.",
+      "repeat_consequences": "Fine increases and vehicle may be towed at owner's expense (₹500-2,000 towing charge)."
+    },
+    "overloading_passengers": {
+      "name": "Overloading Passengers",
+      "section": "194A",
+      "description": "Carrying passengers in excess of the permitted capacity",
+      "applicable_vehicles": ["car", "taxi", "bus", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000,
+        "per_extra_passenger": 1000
+      },
+      "additional_penalties": ["Permit suspension for commercial vehicles"],
+      "compoundable": true,
+      "safety_advice": "Never exceed the seating capacity of your vehicle. Extra passengers means less control, longer braking distance, and higher injury risk in crashes.",
+      "why_exists": "Overloading affects vehicle handling, increases braking distance, and means fewer seat belts/safety features for occupants.",
+      "repeat_consequences": "Fine per extra passenger plus potential permit cancellation for commercial vehicles."
+    },
+    "overloading_goods": {
+      "name": "Overloading Goods Vehicle",
+      "section": "194",
+      "description": "Loading a goods vehicle beyond its permitted carrying capacity",
+      "applicable_vehicles": ["truck"],
+      "fine": {
+        "first_offense": 20000,
+        "repeat_offense": 40000,
+        "per_extra_tonne": 2000
+      },
+      "additional_penalties": ["Vehicle detained until extra load removed", "Permit may be cancelled"],
+      "compoundable": true,
+      "safety_advice": "Always adhere to the load capacity printed on your RC. Overloaded trucks are 3x more likely to be involved in fatal accidents.",
+      "why_exists": "Overloaded vehicles damage roads, have poor braking, are prone to tipping over, and cause a disproportionate number of fatal highway accidents.",
+      "repeat_consequences": "Fine of ₹40,000+ and permit can be permanently cancelled. Driver and owner both held liable."
+    },
+    "driving_without_permit": {
+      "name": "Driving Without Valid Permit",
+      "section": "192A",
+      "description": "Operating a transport/commercial vehicle without a valid permit",
+      "applicable_vehicles": ["taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 10000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Vehicle impoundment", "Imprisonment up to 6 months"],
+      "compoundable": false,
+      "safety_advice": "Ensure your transport vehicle has a valid permit for the route you are operating on. Check permit validity regularly.",
+      "why_exists": "Permits regulate commercial transport, ensure driver qualifications, route safety, and proper insurance coverage.",
+      "repeat_consequences": "Vehicle permanently seized. Imprisonment up to 6 months. Permanent disqualification from holding a transport permit."
+    },
+    "no_puc": {
+      "name": "No Pollution Under Control (PUC) Certificate",
+      "section": "190(2)",
+      "description": "Driving a vehicle without a valid PUC (Pollution Under Control) certificate",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000
+      },
+      "additional_penalties": ["Vehicle registration may be cancelled for repeat offenders"],
+      "compoundable": true,
+      "safety_advice": "Get your PUC certificate renewed every 6 months. It costs only ₹60-100 and ensures your vehicle isn't harming the environment.",
+      "why_exists": "Vehicle emissions contribute to air pollution, which causes respiratory diseases. PUC testing ensures vehicles meet emission standards.",
+      "repeat_consequences": "Fine of ₹2,000 and vehicle registration may be cancelled."
+    },
+    "wrong_side_driving": {
+      "name": "Driving on Wrong Side",
+      "section": "184",
+      "description": "Driving a vehicle on the wrong side of the road against the flow of traffic",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Licence suspension", "Imprisonment up to 6 months"],
+      "compoundable": false,
+      "safety_advice": "Always drive on the correct side of the road. Wrong-side driving causes head-on collisions — the deadliest type of road crash.",
+      "why_exists": "Driving on the wrong side causes head-on collisions at combined speeds, leaving virtually no chance of survival.",
+      "repeat_consequences": "Imprisonment up to 2 years and licence revocation."
+    },
+    "underage_driving": {
+      "name": "Underage Driving / Juvenile Driving",
+      "section": "199A",
+      "description": "Allowing or engaging in driving by a person under the legal age (18 years)",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 25000,
+        "repeat_offense": 25000
+      },
+      "additional_penalties": [
+        "Guardian/owner deemed guilty",
+        "Imprisonment up to 3 years for guardian",
+        "Vehicle registration cancelled",
+        "Juvenile tried under JJ Act"
+      ],
+      "compoundable": false,
+      "safety_advice": "Never let minors drive any motor vehicle. They lack the maturity, training, and legal status to handle traffic situations safely.",
+      "why_exists": "Minors lack the cognitive development and training to handle complex traffic situations. Their accidents often result in multiple casualties.",
+      "repeat_consequences": "Same severe penalties apply. Guardian faces imprisonment up to 3 years. Vehicle registration permanently cancelled."
+    },
+    "racing_on_public_road": {
+      "name": "Racing on Public Roads",
+      "section": "189",
+      "description": "Participating in or organizing unauthorized motor vehicle racing on public roads",
+      "applicable_vehicles": ["two_wheeler", "car"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Imprisonment up to 3 months", "Licence suspension", "Vehicle impoundment"],
+      "compoundable": false,
+      "safety_advice": "Public roads are not racetracks. If you want to experience speed, visit authorized racing tracks. Illegal racing kills innocent bystanders.",
+      "why_exists": "Unauthorized racing on public roads puts all road users at extreme risk and has caused multiple mass casualty events.",
+      "repeat_consequences": "Imprisonment up to 1 year and permanent licence revocation."
+    },
+    "not_giving_way_to_emergency": {
+      "name": "Not Giving Way to Emergency Vehicles",
+      "section": "194E",
+      "description": "Failing to give way to fire engines, ambulances, or other emergency vehicles",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 10000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": [],
+      "compoundable": true,
+      "safety_advice": "Always pull over and give way to ambulances, fire trucks, and police vehicles with active sirens. Someone's life may depend on those seconds.",
+      "why_exists": "Every second counts in emergencies. Blocking an ambulance can directly cause a patient's death.",
+      "repeat_consequences": "Same fine of ₹10,000 applies. Licence may be suspended."
+    },
+    "no_number_plate": {
+      "name": "Driving Without Number Plate / Fancy Number Plate",
+      "section": "177",
+      "description": "Driving without a valid number plate or using a non-standard/fancy number plate",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 5000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Vehicle detention"],
+      "compoundable": true,
+      "safety_advice": "Use only HSRP (High Security Registration Plate) format number plates. Fancy plates are illegal and hinder law enforcement.",
+      "why_exists": "Number plates are essential for vehicle identification, law enforcement, and tracking stolen vehicles or hit-and-run cases.",
+      "repeat_consequences": "Vehicle may be impounded until proper number plate is fitted."
+    },
+    "lane_violation": {
+      "name": "Lane Discipline Violation",
+      "section": "177",
+      "description": "Violating lane discipline rules, improper lane changes, or driving in wrong lane",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 500,
+        "repeat_offense": 1500
+      },
+      "additional_penalties": [],
+      "compoundable": true,
+      "safety_advice": "Stay in your lane and use indicators before changing lanes. Follow lane markings — they are designed to keep traffic flowing safely.",
+      "why_exists": "Lane discipline prevents side-swipe accidents and keeps traffic flowing smoothly. Poor lane discipline is a leading cause of highway crashes.",
+      "repeat_consequences": "Fine increases to ₹1,500."
+    },
+    "disobeying_authority": {
+      "name": "Disobeying Orders of Authorities",
+      "section": "179",
+      "description": "Refusing to follow the orders of a police officer or traffic authority",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 2000,
+        "repeat_offense": 4000
+      },
+      "additional_penalties": ["Vehicle seizure possible", "Licence suspension"],
+      "compoundable": false,
+      "safety_advice": "Always cooperate with traffic police. If you believe a challan is wrong, pay it and contest it legally at the traffic court.",
+      "why_exists": "Traffic officers manage road safety. Disobeying them creates chaos and can escalate into dangerous situations.",
+      "repeat_consequences": "Fine of ₹4,000, vehicle seizure, and possible arrest."
+    },
+    "driving_despite_disqualification": {
+      "name": "Driving Despite Disqualification",
+      "section": "182",
+      "description": "Driving a motor vehicle when your licence has been suspended or revoked",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 10000,
+        "repeat_offense": 10000
+      },
+      "additional_penalties": ["Imprisonment up to 3 months"],
+      "compoundable": false,
+      "safety_advice": "If your licence is suspended, do not drive. Use public transport until the suspension period ends and you are legally permitted to drive again.",
+      "why_exists": "Licence suspension is a punishment for serious violations. Driving despite it shows disregard for the law and road safety.",
+      "repeat_consequences": "Imprisonment up to 3 months and permanent licence revocation possible."
+    },
+    "honking_in_silence_zone": {
+      "name": "Unnecessary Honking / Honking in Silence Zone",
+      "section": "177",
+      "description": "Using horn unnecessarily or honking in designated silence zones (hospitals, schools, courts)",
+      "applicable_vehicles": ["two_wheeler", "car", "taxi", "bus", "truck", "auto_rickshaw"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000
+      },
+      "additional_penalties": [],
+      "compoundable": true,
+      "safety_advice": "Avoid unnecessary honking. Silence zones near hospitals and schools must be strictly respected. Noise pollution affects health and concentration.",
+      "why_exists": "Excessive honking contributes to noise pollution, causes stress, and disrupts patients in hospitals and students in schools.",
+      "repeat_consequences": "Fine increases to ₹2,000."
+    },
+    "not_wearing_rear_seatbelt": {
+      "name": "Not Wearing Rear Seat Belt",
+      "section": "194B",
+      "description": "Rear passengers not wearing seat belts in a motor vehicle",
+      "applicable_vehicles": ["car", "taxi"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 1000
+      },
+      "additional_penalties": [],
+      "compoundable": true,
+      "safety_advice": "Rear seat belt usage is now mandatory. In a crash, an unbelted rear passenger becomes a projectile that can kill front-seat occupants.",
+      "why_exists": "Studies show unbelted rear passengers are 3x more likely to die in a crash and can cause fatal injuries to belted front passengers.",
+      "repeat_consequences": "Same fine applies. Enforcement is increasing with cameras."
+    },
+    "triple_riding": {
+      "name": "Triple Riding on Two-Wheeler",
+      "section": "128/177 of MVA",
+      "description": "Carrying more than one pillion rider on a two-wheeler (except child below 4 years)",
+      "applicable_vehicles": ["two_wheeler"],
+      "fine": {
+        "first_offense": 1000,
+        "repeat_offense": 2000
+      },
+      "additional_penalties": ["Licence suspension for repeat offenders"],
+      "compoundable": true,
+      "safety_advice": "Two-wheelers are designed for a maximum of two adults. Triple riding severely affects balance, braking, and control.",
+      "why_exists": "Overloading a two-wheeler compromises stability and increases stopping distance. Falls with multiple riders cause more severe injuries.",
+      "repeat_consequences": "Fine doubles and licence may be suspended."
+    }
+  },
+  "speed_limits": {
+    "city": {
+      "two_wheeler": 50,
+      "car": 50,
+      "taxi": 50,
+      "auto_rickshaw": 40,
+      "bus": 40,
+      "truck": 40
+    },
+    "highway": {
+      "two_wheeler": 80,
+      "car": 100,
+      "taxi": 80,
+      "auto_rickshaw": 40,
+      "bus": 80,
+      "truck": 60
+    },
+    "expressway": {
+      "two_wheeler": 80,
+      "car": 120,
+      "taxi": 100,
+      "auto_rickshaw": 0,
+      "bus": 100,
+      "truck": 60
+    }
+  },
+  "vehicle_types": {
+    "two_wheeler": "Two Wheeler (Motorcycle/Scooter/Moped)",
+    "car": "Car / SUV / Personal Vehicle (LMV)",
+    "taxi": "Taxi / Cab / Ride Service",
+    "auto_rickshaw": "Auto Rickshaw / E-Rickshaw",
+    "bus": "Bus (Public Transport / Private)",
+    "truck": "Truck / Goods Vehicle (HMV)"
+  },
+  "general_rules": {
+    "legal_driving_age": {
+      "with_gear": 18,
+      "without_gear": 16,
+      "transport": 20
+    },
+    "bac_limit_mg_per_100ml": 30,
+    "documents_required": [
+      "Driving Licence",
+      "Vehicle Registration Certificate (RC)",
+      "Insurance Certificate",
+      "PUC Certificate",
+      "Fitness Certificate (for commercial vehicles)"
+    ],
+    "emergency_numbers": {
+      "police": "100",
+      "ambulance": "108",
+      "road_accident": "1073",
+      "women_helpline": "1091",
+      "national_emergency": "112"
+    }
+  }
+}

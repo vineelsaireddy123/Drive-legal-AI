@@ -1,0 +1,342 @@
+{
+  "states": {
+    "delhi": {
+      "name": "Delhi",
+      "notes": "Delhi follows central MV Act 2019 fines with strict enforcement via e-challan system.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "no_seatbelt": {"first_offense": 1000, "repeat_offense": 2000},
+        "signal_jump": {"first_offense": 1000, "repeat_offense": 5000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 2000, "repeat_offense": 4000},
+        "using_phone_while_driving": {"first_offense": 5000, "repeat_offense": 10000},
+        "no_parking": {"first_offense": 500, "repeat_offense": 1500},
+        "dangerous_driving": {"first_offense": 5000, "repeat_offense": 10000}
+      },
+      "local_rules": ["Odd-Even scheme may apply during pollution emergencies", "HSRP plates mandatory", "E-challan system active — fines can be paid online at echallan.parivahan.gov.in"]
+    },
+    "maharashtra": {
+      "name": "Maharashtra",
+      "notes": "Maharashtra reduced some fines from central Act levels via state notification in 2020.",
+      "overrides": {
+        "no_helmet": {"first_offense": 500, "repeat_offense": 1000},
+        "no_seatbelt": {"first_offense": 500, "repeat_offense": 1000},
+        "signal_jump": {"first_offense": 500, "repeat_offense": 1000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000},
+        "using_phone_while_driving": {"first_offense": 1500, "repeat_offense": 3000},
+        "no_parking": {"first_offense": 500, "repeat_offense": 1500},
+        "driving_without_licence": {"first_offense": 5000, "repeat_offense": 10000}
+      },
+      "local_rules": ["Mumbai has dedicated traffic police app for reporting violations", "Pune has automated speed cameras on expressway", "Maharashtra Traffic Police WhatsApp helpline available"]
+    },
+    "karnataka": {
+      "name": "Karnataka",
+      "notes": "Karnataka largely follows central MV Act 2019 fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "no_seatbelt": {"first_offense": 1000, "repeat_offense": 2000},
+        "signal_jump": {"first_offense": 1000, "repeat_offense": 5000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000},
+        "using_phone_while_driving": {"first_offense": 5000, "repeat_offense": 10000}
+      },
+      "local_rules": ["Bangalore Traffic Police uses AI cameras for enforcement", "Online challan payment via Karnataka One portal"]
+    },
+    "tamil_nadu": {
+      "name": "Tamil Nadu",
+      "notes": "Tamil Nadu has not fully adopted the enhanced central penalties and maintains lower fines for some violations.",
+      "overrides": {
+        "no_helmet": {"first_offense": 500, "repeat_offense": 1000},
+        "no_seatbelt": {"first_offense": 500, "repeat_offense": 1000},
+        "signal_jump": {"first_offense": 500, "repeat_offense": 1000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000},
+        "using_phone_while_driving": {"first_offense": 1000, "repeat_offense": 2000}
+      },
+      "local_rules": ["Chennai has extensive CCTV network for traffic enforcement", "Virtual courts for traffic challan cases"]
+    },
+    "kerala": {
+      "name": "Kerala",
+      "notes": "Kerala follows central MV Act fines with active enforcement especially for helmet and drunk driving.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1500, "repeat_offense": 3000}
+      },
+      "local_rules": ["Kerala MVD has mobile app for challan tracking", "Strict enforcement during festival seasons"]
+    },
+    "uttar_pradesh": {
+      "name": "Uttar Pradesh",
+      "notes": "UP follows central MV Act 2019 penalties.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "no_seatbelt": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000}
+      },
+      "local_rules": ["UP Traffic Police uses e-challan system", "Lucknow and Noida have AI-based traffic cameras"]
+    },
+    "rajasthan": {
+      "name": "Rajasthan",
+      "notes": "Rajasthan reduced some fines from central levels.",
+      "overrides": {
+        "no_helmet": {"first_offense": 500, "repeat_offense": 1000},
+        "no_seatbelt": {"first_offense": 500, "repeat_offense": 1000},
+        "signal_jump": {"first_offense": 500, "repeat_offense": 1000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000}
+      },
+      "local_rules": ["Jaipur has integrated traffic management system", "Rajasthan Transport Department online portal for services"]
+    },
+    "gujarat": {
+      "name": "Gujarat",
+      "notes": "Gujarat reduced fines from central Act levels via state notification.",
+      "overrides": {
+        "no_helmet": {"first_offense": 500, "repeat_offense": 1000},
+        "no_seatbelt": {"first_offense": 500, "repeat_offense": 1000},
+        "signal_jump": {"first_offense": 500, "repeat_offense": 1000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000},
+        "overspeeding": {"first_offense": 1000, "repeat_offense": 2000}
+      },
+      "local_rules": ["Gujarat strictly enforces prohibition — alcohol consumption itself is illegal", "Ahmedabad has BRTS corridor traffic rules"]
+    },
+    "telangana": {
+      "name": "Telangana",
+      "notes": "Telangana largely follows central MV Act fines with active e-challan system in Hyderabad.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "no_seatbelt": {"first_offense": 1000, "repeat_offense": 2000},
+        "signal_jump": {"first_offense": 1000, "repeat_offense": 5000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Hyderabad Traffic Police has one of India's most advanced e-challan systems", "AI cameras at 100+ junctions in Hyderabad"]
+    },
+    "west_bengal": {
+      "name": "West Bengal",
+      "notes": "West Bengal significantly reduced fines from central Act levels.",
+      "overrides": {
+        "no_helmet": {"first_offense": 200, "repeat_offense": 500},
+        "no_seatbelt": {"first_offense": 200, "repeat_offense": 500},
+        "signal_jump": {"first_offense": 500, "repeat_offense": 1000},
+        "drunk_driving": {"first_offense": 5000, "repeat_offense": 10000},
+        "overspeeding": {"first_offense": 500, "repeat_offense": 1000},
+        "driving_without_licence": {"first_offense": 1000, "repeat_offense": 2000}
+      },
+      "local_rules": ["Kolkata Police uses e-challan system", "West Bengal has among the lowest traffic fines in India"]
+    },
+    "madhya_pradesh": {
+      "name": "Madhya Pradesh",
+      "notes": "MP follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Bhopal and Indore have smart traffic systems"]
+    },
+    "andhra_pradesh": {
+      "name": "Andhra Pradesh",
+      "notes": "AP follows central MV Act 2019 fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["AP Transport uses DigiLocker integration for documents"]
+    },
+    "punjab": {
+      "name": "Punjab",
+      "notes": "Punjab follows central MV Act fines with some local modifications.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Punjab Police uses e-challan system", "Chandigarh (UT) has separate stricter rules"]
+    },
+    "haryana": {
+      "name": "Haryana",
+      "notes": "Haryana follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Gurugram has smart traffic management system"]
+    },
+    "bihar": {
+      "name": "Bihar",
+      "notes": "Bihar follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Patna has e-challan facility"]
+    },
+    "odisha": {
+      "name": "Odisha",
+      "notes": "Odisha follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Bhubaneswar Smart City has integrated traffic cameras"]
+    },
+    "assam": {
+      "name": "Assam",
+      "notes": "Assam follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Guwahati Traffic Police uses e-challan"]
+    },
+    "jharkhand": {
+      "name": "Jharkhand",
+      "notes": "Jharkhand follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Ranchi has traffic enforcement cameras at key junctions"]
+    },
+    "chhattisgarh": {
+      "name": "Chhattisgarh",
+      "notes": "Chhattisgarh follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Raipur has smart traffic signals"]
+    },
+    "uttarakhand": {
+      "name": "Uttarakhand",
+      "notes": "Uttarakhand follows central MV Act fines with strict enforcement in hill areas.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Special hill driving rules apply on mountain roads", "Honking restrictions in eco-sensitive zones"]
+    },
+    "himachal_pradesh": {
+      "name": "Himachal Pradesh",
+      "notes": "HP follows central fines with additional mountain driving regulations.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Right of way rules on narrow hill roads", "Snow chain requirements in winter"]
+    },
+    "goa": {
+      "name": "Goa",
+      "notes": "Goa follows central MV Act fines.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Tourist vehicle regulations apply", "Two-wheeler rental companies must ensure helmets"]
+    },
+    "jammu_kashmir": {
+      "name": "Jammu & Kashmir",
+      "notes": "J&K follows central MV Act fines post-2019.",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Special convoy rules may apply in some areas"]
+    },
+    "tripura": {
+      "name": "Tripura",
+      "notes": "Tripura follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "meghalaya": {
+      "name": "Meghalaya",
+      "notes": "Meghalaya follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "manipur": {
+      "name": "Manipur",
+      "notes": "Manipur follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "nagaland": {
+      "name": "Nagaland",
+      "notes": "Nagaland follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "mizoram": {
+      "name": "Mizoram",
+      "notes": "Mizoram follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "arunachal_pradesh": {
+      "name": "Arunachal Pradesh",
+      "notes": "Arunachal Pradesh follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    },
+    "sikkim": {
+      "name": "Sikkim",
+      "notes": "Sikkim follows central MV Act fines.",
+      "overrides": {},
+      "local_rules": []
+    }
+  },
+  "union_territories": {
+    "chandigarh": {
+      "name": "Chandigarh",
+      "overrides": {
+        "no_helmet": {"first_offense": 1000, "repeat_offense": 2000},
+        "drunk_driving": {"first_offense": 10000, "repeat_offense": 15000}
+      },
+      "local_rules": ["Chandigarh has strict traffic enforcement", "E-challan system active"]
+    },
+    "puducherry": {
+      "name": "Puducherry",
+      "overrides": {},
+      "local_rules": []
+    },
+    "ladakh": {
+      "name": "Ladakh",
+      "overrides": {},
+      "local_rules": ["Special permits required for certain routes"]
+    }
+  },
+  "city_to_state_mapping": {
+    "mumbai": "maharashtra", "pune": "maharashtra", "nagpur": "maharashtra", "thane": "maharashtra",
+    "delhi": "delhi", "new delhi": "delhi", "noida": "uttar_pradesh", "gurgaon": "haryana", "gurugram": "haryana",
+    "bangalore": "karnataka", "bengaluru": "karnataka", "mysore": "karnataka", "mysuru": "karnataka",
+    "chennai": "tamil_nadu", "madurai": "tamil_nadu", "coimbatore": "tamil_nadu",
+    "hyderabad": "telangana", "secunderabad": "telangana",
+    "kolkata": "west_bengal", "howrah": "west_bengal",
+    "ahmedabad": "gujarat", "surat": "gujarat", "vadodara": "gujarat", "rajkot": "gujarat",
+    "jaipur": "rajasthan", "jodhpur": "rajasthan", "udaipur": "rajasthan",
+    "lucknow": "uttar_pradesh", "kanpur": "uttar_pradesh", "varanasi": "uttar_pradesh", "agra": "uttar_pradesh",
+    "kochi": "kerala", "thiruvananthapuram": "kerala", "trivandrum": "kerala", "calicut": "kerala", "kozhikode": "kerala",
+    "bhopal": "madhya_pradesh", "indore": "madhya_pradesh",
+    "patna": "bihar",
+    "bhubaneswar": "odisha",
+    "chandigarh": "chandigarh",
+    "guwahati": "assam",
+    "ranchi": "jharkhand",
+    "raipur": "chhattisgarh",
+    "dehradun": "uttarakhand",
+    "shimla": "himachal_pradesh",
+    "panaji": "goa",
+    "srinagar": "jammu_kashmir", "jammu": "jammu_kashmir",
+    "gangtok": "sikkim",
+    "imphal": "manipur",
+    "shillong": "meghalaya",
+    "aizawl": "mizoram",
+    "kohima": "nagaland",
+    "agartala": "tripura",
+    "itanagar": "arunachal_pradesh",
+    "visakhapatnam": "andhra_pradesh", "vijayawada": "andhra_pradesh",
+    "ludhiana": "punjab", "amritsar": "punjab",
+    "faridabad": "haryana", "karnal": "haryana",
+    "leh": "ladakh",
+    "pondicherry": "puducherry"
+  }
+}

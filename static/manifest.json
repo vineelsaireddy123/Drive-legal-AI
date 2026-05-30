@@ -1,0 +1,24 @@
+{
+  "name": "DriveLegal.ai",
+  "short_name": "DriveLegal",
+  "description": "AI-powered road safety assistant for Indian traffic laws, fines, and real-time safety.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0E1A",
+  "theme_color": "#E87A2D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect fill='%23E87A2D' width='192' height='192' rx='32'/%3E%3Cpath d='M96 40l48 96H48z' fill='white'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect fill='%23E87A2D' width='512' height='512' rx='64'/%3E%3Cpath d='M256 100l128 256H128z' fill='white'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["utilities", "navigation"],
+  "lang": "en-IN"
+}
