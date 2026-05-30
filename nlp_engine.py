@@ -176,44 +176,48 @@ class NLPEngine:
                 elif country_hint:
                     full_prompt = f"{country_hint}User Question: {message}"
                 
-                # Maintain history manually for REST API
-                history.append({"role": "user", "parts": [{"text": full_prompt}]})
+                # Base system message for Groq
+                messages = [{"role": "system", "content": SYSTEM_PROMPT}]
+                
+                # Append previous conversation history
+                messages.extend(history)
+                
+                # Add current user prompt
+                messages.append({"role": "user", "content": full_prompt})
                 
                 headers = {
                     'Content-Type': 'application/json',
-                    'X-goog-api-key': self.api_key
+                    'Authorization': f'Bearer {self.api_key}'
                 }
                 payload = {
-                    "contents": history,
-                    "systemInstruction": {"parts": [{"text": SYSTEM_PROMPT}]},
-                    "generationConfig": {"temperature": 0.2, "top_p": 0.8, "top_k": 40, "maxOutputTokens": 1024}
+                    "model": "llama3-8b-8192",
+                    "messages": messages,
+                    "temperature": 0.2,
+                    "top_p": 0.8,
+                    "max_tokens": 1024
                 }
                 
                 req = requests.post(self.gemini_url, headers=headers, json=payload, timeout=15)
                 
                 if req.status_code != 200:
-                    history.pop() # Remove failed user message from history
-                    print(f"Gemini API Error (HTTP {req.status_code}): {req.text}")
-                    # Throw exception to trigger offline fallback
+                    print(f"Groq API Error (HTTP {req.status_code}): {req.text}")
                     raise Exception(f"HTTP {req.status_code}")
                     
                 resp_json = req.json()
-                ai_text = resp_json['candidates'][0]['content']['parts'][0]['text']
+                ai_text = resp_json['choices'][0]['message']['content']
                 
-                # Append Model response to history
-                history.append({"role": "model", "parts": [{"text": ai_text}]})
-                
-                # Remove system injection context from user message in history to save tokens for next calls
-                history[-2]["parts"][0]["text"] = message
+                # Maintain manual history (append user then assistant)
+                history.append({"role": "user", "content": message}) # Save original message without prompt injection
+                history.append({"role": "assistant", "content": ai_text})
                 
                 return {
-                    'text': ai_text.replace('**', ''), # Strip markdown bolding for UI
-                    'data': {'type': 'ai_response', 'source': 'gemini-2.0'},
+                    'text': ai_text.replace('**', ''), # Strip markdown bolding
+                    'data': {'type': 'ai_response', 'source': 'groq-llama3'},
                     'confidence': 'High',
                     'latency_ms': int((time.time() - start_time) * 1000)
                 }
             except Exception as e:
-                print(f"Gemini API Error: {e}. Falling back to rule-based engine.")
+                print(f"Groq API Error: {e}. Falling back to rule-based engine.")
 
         # â”€â”€ OFFLINE RULE-BASED FALLBACK â”€â”€
         return self._process_fallback(message, session_id, start_time)
